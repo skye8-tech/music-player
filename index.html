@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music player</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="main">
+      <div class="container box">
+        <div class="music">
+          
+          <div class="music-player">
+            
+            <div class="header">
+                <i class="ph-bold ph-music-notes"></i>
+              <h2><b>Now Playing</b></h2>
+              <i class="ph-bold ph-list"></i>
+            </div>
+            
+            <div class="details">
+              <img class="track-image" src="download.jpg" />
+              <p class="title">Song Title</p>
+              <p class="artist">Artist Name</p>
+            </div>
+            
+            <div class="controls">
+              <div class="song-timer">
+                <span class="current-time">00:00</span>
+                <span class="duration-time">04:10</span>
+              </div>
+              
+              <div class="duration">
+                <input
+                  type="range" class="duration-slider"min="0"
+                  max="100"value="0"/>
+              </div>
+              
+              <div class="buttons">
+                <button class="prev">
+                    <i class="ph-bold ph-skip-back"></i>
+                </button>
+                <button class="play">
+                    <i class="ph-bold ph-play"></i>
+                </button>
+                <button class="next">
+                    <i class="ph-bold ph-skip-forward"></i>
+                </button>
+              </div>
+    
+              <button class="play-all">
+                Play All <i class="ph-bold ph-arrows-clockwise"></i>
+              </button>
+    
+              <div class="volume">
+                <p id="show-volume">50</p>
+                <i class="ph-bold ph-speaker-low"id="volume-icon"></i>
+                <input type="range" id="volume" min="0" max="100" value="50" />
+                <i class="ph-bold ph-speaker-high"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="music-playlist">
+            <div class="header playlist-header">
+                <i class="ph-bold ph-music-notes"></i>
+              <h2>Playlist</h2>
+              <i class="ph-bold ph-x"></i>
+            </div>
+
+            <div class="playlist-div">
+              <!-- <div class="playlist">
+                <span class="song-index">1</span>
+                <p class="single-song">Song one</p>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
